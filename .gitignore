@@ -26,4 +26,7 @@ dist-ssr
 .env
 
 # vscode
-.vscode
+.vscodenode_modules
+dist
+.env
+.env.*

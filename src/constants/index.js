@@ -15,10 +15,9 @@ import {
   git,
   figma,
   docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
+  freddiemac,
+  thryve,
+  cliffai,
   carrent,
   jobit,
   tripguide,
@@ -54,7 +53,7 @@ const services = [
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "AI Engineer",
     icon: creator,
   },
 ];
@@ -116,84 +115,65 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
+    title: "Software Developer",
+    company_name: "Freddie Mac",
+    icon: freddiemac,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "Jan 2024 – Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Built backend data pipelines in AWS + Databricks to process 100GB+ daily from Salesforce, Snowflake, and SQL Server.",
+      "Developed REST APIs and automated batch jobs with Python, Spark, and dbt; improved processing times by 30%.",
+      "Implemented CI/CD using GitHub Actions; added monitoring via Airflow and CloudWatch.",
+      "Integrated Looker dashboards with backend pipelines for alerts and executive reporting.",
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
+    title: "Software Engineer",
+    company_name: "Thryve Digital Health",
+    icon: thryve,
     iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    date: "Jun 2020 – Aug 2022",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Designed backend ETL systems with Flask and Spring Boot supporting 1M+ patient records.",
+      "Deployed ML models on AWS SageMaker for real-time health predictions (COVID-19 era).",
+      "Led NoSQL modeling with MongoDB/Redis for unstructured health records.",
+      "Built data access APIs and analytics dashboards (Power BI, Tableau).",
+    ],
+  },
+  {
+    title: "Software Engineer",
+    company_name: "Cliff.AI",
+    icon: cliffai,
+    iconBg: "#E6DEDD",
+    date: "Dec 2019 – May 2020",
+    points: [
+      "Engineered backend crawlers and APIs in Python/Java for structured & unstructured business data.",
+      "Automated ingestion from Google Analytics, Salesforce; improved update frequency by 50%.",
+      "Built microservices in Flask; deployed with Docker and Jenkins CI.",
       "Participating in code reviews and providing constructive feedback to other developers.",
     ],
   },
 ];
 
-const testimonials = [
+const education = [
   {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+    degree: "Master’s in Computer Science",
+    institution: "Stevens Institute of Technology, USA",
+    year: "2022 – 2023",
+    details:
+      "Specialized in Artificial Intelligence, Data Engineering, and Cloud Computing. Developed advanced solutions in machine learning, scalable architectures, and AI-driven applications. Completed industry projects integrating AWS, Python, and big data technologies.",
+    gpa: "3.8 / 4.0",
+    logo: "/stevens.png"
   },
   {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
-  },
+    degree: "Bachelor’s in Information Technology",
+    institution: "CVR College of Engineering, India",
+    year: "2018 – 2022",
+    details:
+      "Focused on backend development, database management, and distributed systems. Built multiple real-world applications using Java, Python, and SQL. Led final-year project on optimizing database query performance.",
+    gpa: "3.7 / 4.0",
+    logo: "/cvr.png"
+  }
 ];
 
 const projects = [
@@ -262,4 +242,4 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, education, projects };
