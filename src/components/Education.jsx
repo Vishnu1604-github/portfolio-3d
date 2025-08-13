@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
-import { education } from "../constants";
+import { education as educationData } from "../constants";
 
 const EducationCard = ({
   index,
@@ -17,10 +17,7 @@ const EducationCard = ({
 }) => (
   <motion.div
     variants={fadeIn("", "spring", index * 0.5, 0.75)}
-    className="
-      w-full bg-black-200 p-6 md:p-8 rounded-3xl
-      flex flex-col md:flex-row md:items-start md:justify-between gap-6
-    "
+    className="w-full bg-black-200 p-6 md:p-8 rounded-3xl flex flex-col md:flex-row md:items-start md:justify-between gap-6"
   >
     {/* Left column */}
     <div className="md:w-1/3 flex items-center gap-3">
@@ -69,12 +66,12 @@ const Education = () => {
       <div
         className={`-mt-16 pb-14 ${styles.paddingX} flex flex-col items-center gap-7`}
       >
-        {education.map((item, index) => (
+        {educationData.map((item, idx) => (
           <div
-            key={`${item.institution}-${index}`}
+            key={`${item.institution}-${idx}`}
             className="w-full max-w-md sm:max-w-2xl lg:max-w-none"
           >
-            <EducationCard index={index} {...item} />
+            <EducationCard index={idx} {...item} />
           </div>
         ))}
       </div>
