@@ -5,7 +5,7 @@ import About from "./About";
 import Tech from "./Tech";
 import Experience from "./Experience";
 import Works from "./Works";
-import Education from "./education";
+import Education from "./Education";
 import Contact from "./Contact";
 import CanvasLoader from "./Loader";
 
